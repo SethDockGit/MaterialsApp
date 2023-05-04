@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>MaterialsApp</title>
+    </head>
+    <body>
+        <h1>Welcome to MaterialsApp</h1>
+        <h3>Check my resources</h3>
+        <div>
+            <span>
+                <input id="username" type="text" placeholder="Enter username"/>
+                <button onclick="checkResources()">Check Resources</button>
+            </span>
+            <h3 id="yourResources"></h3>
+        </div>
+        <div id="depositOrWithdraw" style="display:none;">
+            <h3>Deposit or Withdraw</h3>
+            <span>
+                <button onclick="selectDeposit()">Deposit Resource</button>
+                <button onclick="selectWithdraw()">Withdraw Resource</button>
+            </span>
+            <div id="selectResource" style="display:none;">
+                <h3>Select a resource</h3>
+                <span>
+                    <button onclick="selectWood()">Wood</button>
+                    <button onclick="selectStone()">Stone</button>
+                    <button onclick="selectGold()">Gold</button>
+                    <button onclick="selectIron()">Iron</button>
+                </span>
+                <span>
+                    <input id="enterAmount" style="display:none;" type="text" placeholder="Enter an amount">
+                    <button id="deposit" style="display:none;" onclick="depositResource()">Deposit</button>
+                    <button id="withdraw" style="display:none;" onclick="withdrawResource()">Withdraw</button>
+                </span>
+                <h3 id="transactionMessage"></h3>
+            </div>
+
+        </div>
+
+    </body>
+    <script src="script.js"></script>
+</html>
