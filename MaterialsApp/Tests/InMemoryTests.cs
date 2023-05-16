@@ -11,10 +11,6 @@ namespace Tests
 {
     public class InMemoryTests
     {
-        //could you just have the data source as a property and instantiate in the constructor?
-        //can you even use a constructor if InMemoryTests is not instantiated anywhere?
-
-        //InMemoryDataSource InMemory { get; set; }
 
         public static List<User> TestUsers { get; set; } = new List<User>
         {

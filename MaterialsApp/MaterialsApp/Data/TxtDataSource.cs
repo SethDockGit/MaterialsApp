@@ -46,8 +46,6 @@ namespace MaterialsApp.Data
                         StoneCount = int.Parse(splitline[2]),
                         IronCount = int.Parse(splitline[3]),
                         GoldCount = int.Parse(splitline[4])
-
-                        //use tryparse instead of parse
                     };
 
                     Users.Add(user);

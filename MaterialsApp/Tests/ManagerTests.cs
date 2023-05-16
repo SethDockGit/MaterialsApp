@@ -113,7 +113,6 @@ namespace Tests
 
             Assert.Equal(expectedWoodCount, actualWoodCount);
             }
-            //where to put response.User = user. In the method or the test?
         }
         [Fact]
         public void Manager_DepositResource_CanDepositStone()
@@ -148,8 +147,6 @@ namespace Tests
 
                 Assert.Equal(expectedIronCount, actualIronCount);
             }
-            //what would happen if deposit was negative? The test would not route the deposit
-            //and so the user's count would not be equal to the "expected" count
         }
         [Fact]
         public void Manager_DepositResource_CanDepositGold()
